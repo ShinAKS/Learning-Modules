@@ -1,0 +1,20 @@
+.add-transaction {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.income-add {
+  flex: 0.48;
+}
+
+.income-add button {
+  background-color: #5cb85c;
+}
+
+.expense-add {
+  flex: 0.48;
+}
+.expense-add button {
+  background-color: #d9534f;
+}
