@@ -48,7 +48,7 @@ const fg = {
   h: 112,
   x: 0,
   y: cvs.height - 112,
-  dx: 2,
+  dx: 1,
 
   draw: function () {
     ctx.drawImage(
@@ -96,8 +96,8 @@ const bird = {
   h: 26,
   radius: 12,
   frame: 0,
-  gravity: 0.15,
-  jump: 3.6,
+  gravity: 0.1,
+  jump: 2.6,
   speed: 0,
   rotation: 0,
   draw: function () {
@@ -230,7 +230,7 @@ const pipes = {
   h: 400,
   gap: 85,
   maxYPos: -120,
-  dx: 2,
+  dx: 1,
 
   draw: function () {
     for (let i = 0; i < this.position.length; i++) {
