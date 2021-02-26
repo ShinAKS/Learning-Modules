@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 434px;
+  width: 552px;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+.square {
+  background-color: #e2e2e2;
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+}
+
+.animate-square {
+  background-color: #e2e2e2;
+  animation: mymove 2s ease-in;
+}
+
+@keyframes mymove {
+  from {
+    background-color: cyan;
+  }
+  to {
+    background-color: yellow;
+    /* transform: scale(0.2); */
+  }
+}
