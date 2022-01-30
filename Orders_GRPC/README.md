@@ -8,8 +8,8 @@ Course Link : https://www.linkedin.com/learning/building-java-microservices-with
 
 ## Services Diagram
 
-![](images\Service_Overview.png)
+![](images/Service_Overview.png)
 
 ## Code Flow
 
-![](images\Code_flow.png)
+![](images/Code_flow.png)
