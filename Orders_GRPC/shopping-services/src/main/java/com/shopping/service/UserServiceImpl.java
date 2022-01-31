@@ -9,19 +9,20 @@ import com.shopping.stubs.user.UserServiceGrpc;
 import io.grpc.stub.StreamObserver;
 
 public class UserServiceImpl extends UserServiceGrpc.UserServiceImplBase {
+    UserDao userDao = new UserDao();
 
     @Override
     public void getUserDetails(UserRequest request, StreamObserver<UserResponse> responseObserver) {
-        UserDao userDao = new UserDao();
+
         User user = userDao.getDetails(request.getUsername());
 
         UserResponse.Builder userResponseBuilder =
                 UserResponse.newBuilder()
-                .setId(user.getId())
-                .setUsername(user.getUsername())
-                .setAge(user.getAge())
-                .setName(user.getName())
-                .setGender(Gender.valueOf(user.getGender()));
+                        .setId(user.getId())
+                        .setUsername(user.getUsername())
+                        .setAge(user.getAge())
+                        .setName(user.getName())
+                        .setGender(Gender.valueOf(user.getGender()));
 
         UserResponse userResponse = userResponseBuilder.build();
 
