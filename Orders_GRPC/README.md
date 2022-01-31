@@ -13,3 +13,7 @@ Course Link : https://www.linkedin.com/learning/building-java-microservices-with
 ## Code Flow
 
 ![](images/Code_flow.png)
+
+## Orders and User Service Integration Flow
+
+![](images/User_Order_Connect.png)
